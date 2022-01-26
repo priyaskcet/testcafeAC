@@ -1,0 +1,4 @@
+pull the code from git hub 
+install nodejs , Visual studio
+inside visual studio code use the  terminal and install npm, cucumber , testcafe 
+and using the command npm test run the project.
