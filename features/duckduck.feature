@@ -26,10 +26,10 @@ Feature: Searching for logo on duckduckgo
     Then My page background should change colour
   Scenario: AC6
     Given I am on the homepage
-    When I go to the homepage and type <Data>
+    When I go to the homepage and type "Back to the future BMX Bandits Rocky IV Short Circuit The Terminator Ferris Bueller's day off"
     Then click the magnifying glass
     Then I should get 10 results on the results page
-
+     
   Scenario: AC7
     Given I am on the traffic page
     When I click on the 2018 Traffic section

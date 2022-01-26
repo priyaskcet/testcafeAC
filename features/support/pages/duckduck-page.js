@@ -39,6 +39,9 @@ exports.duckduck = {
     darkTheme: function() {
         return Selector('label').withAttribute('data-theme-id','d').with({boundTestRun: testController});
     },
+    magnifying: function() {
+        return Selector('input').withAttribute('id','search_button_homepage').with({boundTestRun: testController});
+    },
     traffic2018: function(){
        return Selector('h2').withText("2018 Traffic").with({boundTestRun: testController});
     },

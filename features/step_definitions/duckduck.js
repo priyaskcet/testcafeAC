@@ -38,8 +38,6 @@ When(/^I click on the hamburger menu in the top right$/, async function () {
     await testController.click(duckduckPage.duckduck.hamburgerButton())
 });
 Then(/^I expect to see a themes link$/,async function () {
-
-//var firstLink = Selector('a').withText("Themes").with({ boundTestRun: testController });
 if(duckduckPage.duckduck.Themeslink()=="Themes"){
    await testController.click(duckduckPage.duckduck.Themeslink());
 }
@@ -55,6 +53,13 @@ Then(/^My page background should change colour$/, async function () {
         await testController.checked;   
     }
     
+});
+When(/^I go to the homepage and type "([^"]*)"$/, async function (String) {
+
+    await testController.typeText(duckduckPage.duckduck.SearchBox(), String);
+});
+Then(/^click the magnifying glass$/, async function () {
+    await testController.click(duckduckPage.duckduck.magnifying());
 });
 Given(/^I am on the traffic page$/, async function() {
     await testController.navigateTo("https://start.duckduckgo.com/traffic");
