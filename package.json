@@ -1,0 +1,23 @@
+{
+  "name": "bddtestcafe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "report": "node report-generator.js",
+  "scripts": {
+    "test": ".\\node_modules\\.bin\\cucumber-js --format json:reports/report.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cucumber": "^5.1.0",
+    "cucumber-html-reporter": "^5.5.0"
+  },
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "ffmpeg": "^0.0.4",
+    "git": "^0.1.5",
+    "npm": "^8.3.2",
+    "testcafe": "^1.18.2"
+  }
+}
