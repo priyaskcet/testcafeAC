@@ -1,4 +1,9 @@
 pull the code from git hub 
 install nodejs , Visual studio
-inside visual studio code use the  terminal and install npm, cucumber , testcafe 
+inside visual studio code use the  terminal and install npm (npm install), cucumber , testcafe 
 and using the command npm test run the project.
+And also install  
+node report-generator-js
+npm install cucumber-html-reporter --save-dev
+npm run reports
+npm install @ffmpeg-installer/ffmpeg
